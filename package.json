@@ -1,0 +1,16 @@
+{
+  "name": "highcharts-line",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "weweb build",
+    "serve": "weweb serve"
+  },
+  "devDependencies": {
+    "@weweb/cli": "latest"
+  },
+  "dependencies": {
+    "chart.js": "^3.5.1",
+    "highcharts": "^9.3.3",
+    "highcharts-vue": "^1.4.0"
+  }
+}
