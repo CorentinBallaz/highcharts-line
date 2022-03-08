@@ -76,6 +76,7 @@ export default {
                                 options: {
                                     placeholder: 'Name of the serie',
                                 },
+                                bindable: true,
                             },
                             type: {
                                 label: {
@@ -86,6 +87,7 @@ export default {
                                 options: {
                                     placeholder: 'Type',
                                 },
+                                bindable: true,
                             },
                             color: {
                                 label: {
@@ -96,6 +98,7 @@ export default {
                                 options: {
                                     placeholder: 'Color',
                                 },
+                                bindable: true,
                             },
                             data: {
                                 label: {
