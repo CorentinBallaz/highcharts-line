@@ -2,6 +2,7 @@
   <div>
     <highcharts
       class="stock-chart"
+      style="width: 100%; height: 100%; display: block;"
       :constructor-type="'stockChart'"
       :options="chartOptions"
       :updateArgs="[true, false]"
@@ -35,6 +36,7 @@ export default {
     chartOptions() {
       return {
         chart: {
+          backgroundColor: this.content.backgroundColor,
           spacingTop: 20,
           spacingBottom: 20,
           spacingLeft: 20,
@@ -46,6 +48,24 @@ export default {
         subtitle: {
           text: this.content.subtitle,
         },
+        responsive: {
+            rules: [{
+                condition: {
+                    maxWidth: 500
+                },
+                chartOptions: {
+                    chart: {
+                        height: 300
+                    },
+                    subtitle: {
+                        text: null
+                    },
+                    navigator: {
+                        enabled: false
+                    }
+                }
+            }]
+        },
         rangeSelector: {
           buttonTheme: {
             // styles for the buttons
@@ -54,12 +74,12 @@ export default {
             "stroke-width": 0,
             r: 8,
             style: {
-              color: "#039",
+              color: this.content.buttonColor,
             },
             states: {
               hover: {},
               select: {
-                fill: "#039",
+                fill: this.content.buttonColor,
                 style: {
                   color: "white",
                 },
@@ -107,7 +127,6 @@ export default {
           title: {
             text: this.content.yAxisTitle,
           },
-          min: this.content.yAxisMin,
           opposite: false,
         },
         series: this.content.series,
@@ -129,15 +148,22 @@ export default {
             },
           },
         },
+        scrollbar: {
+          barBackgroundColor: 'gray',
+          barBorderRadius: 7,
+          barBorderWidth: 0,
+          buttonBackgroundColor: 'gray',
+          buttonBorderWidth: 0,
+          buttonArrowColor: 'white',
+          buttonBorderRadius: 7,
+          rifleColor: 'white',
+          trackBackgroundColor: 'white',
+          trackBorderWidth: 1,
+          trackBorderColor: 'silver',
+          trackBorderRadius: 7
+      },
       };
     },
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.stock-chart {
-  width: 100%;
-  height: 100%;
-}
-</style>
