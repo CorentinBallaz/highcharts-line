@@ -100,6 +100,20 @@ export default {
                                 },
                                 bindable: true,
                             },
+                            lineWidth: {
+                                label: {
+                                    fr: "Line Width",
+                                    en: "Épaisseur de ligne",
+                                },
+                                options: {
+                                    min: 0,
+                                    max: 10,
+                                    step: 1,
+                                },
+                                type: 'Number',
+                                defaultValue: 2,
+                                bindable: true,
+                            },
                             data: {
                                 label: {
                                     fr: "Données",
