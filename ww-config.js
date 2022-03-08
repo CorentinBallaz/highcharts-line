@@ -60,20 +60,57 @@ export default {
                 fr: "Séries de données",
                 en: "Data series",
             },
-            type: "Info",
-            options: {
-                text: { fr: 'Séries de données', en: 'Data series'},
-            },
-            responsive: true,
             section: 'settings',
-            bindable: true,
-            defaultValue: [{
-                type: "column",
-                name: "p20",
-                color: "#d87b04",
-                lineWidth: 0,
-                data: [],
-        },]
+            type: 'Array',
+            options: {
+                item: {
+                    type: 'Object',
+                    options: {
+                        item: {
+                            name: {
+                                label: {
+                                    fr: "Nom",
+                                    en: "Name",
+                                },
+                                type: 'Text',
+                                options: {
+                                    placeholder: 'Name of the serie',
+                                },
+                            },
+                            type: {
+                                label: {
+                                    fr: "Type",
+                                    en: "Type",
+                                },
+                                type: 'Text',
+                                options: {
+                                    placeholder: 'Type',
+                                },
+                            },
+                            color: {
+                                label: {
+                                    fr: "Couleur",
+                                    en: "Color",
+                                },
+                                type: 'Color',
+                                options: {
+                                    placeholder: 'Color',
+                                },
+                            },
+                            data: {
+                                label: {
+                                    fr: "Données",
+                                    en: "Data",
+                                },
+                                type: 'Info',
+                                bindable: true,
+                            },
+                        },
+                    },
+                },
+            },
+            // hidden: content => content.submitAction !== 'zapier-hook' && content.submitAction !== 'custom-request',
+            defaultValue: [],
+        },
     }
-}
 };
