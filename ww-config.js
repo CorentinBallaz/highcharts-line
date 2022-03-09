@@ -27,6 +27,15 @@ export default {
             responsive: true,
             defaultValue: "Here is subtitle",
         },
+        fontFamily: {
+            label: {
+                en: 'Font family',
+                fr: 'Font',
+            },
+            type: 'FontFamily',
+            responsive: true,
+            states: true,
+        },
         backgroundColor: {
             label: {
                 fr: "Couleur de fond",

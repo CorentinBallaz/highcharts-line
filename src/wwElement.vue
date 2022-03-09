@@ -44,9 +44,15 @@ export default {
         },
         title: {
           text: this.content.title,
+          style: {
+            fontFamily: this.content.fontFamily
+          }
         },
         subtitle: {
           text: this.content.subtitle,
+          style: {
+            fontFamily: this.content.fontFamily
+          }
         },
         responsive: {
             rules: [{
@@ -126,6 +132,9 @@ export default {
         yAxis: {
           title: {
             text: this.content.yAxisTitle,
+            style: {
+            fontFamily: this.content.fontFamily
+            }
           },
           opposite: false,
         },
