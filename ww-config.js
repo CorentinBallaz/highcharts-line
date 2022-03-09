@@ -64,6 +64,15 @@ export default {
             responsive: true,
             defaultValue: "#000000",
         },
+        rangeSelectorColor: {
+            label: {
+                fr: "Couleur de la selection temporelle",
+                en: "Color of the time selector",
+            },
+            type: "Color",
+            responsive: true,
+            defaultValue: "#000000",
+        },
         series: {
             label: {
                 fr: "Séries de données",

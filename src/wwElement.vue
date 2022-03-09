@@ -93,9 +93,14 @@ export default {
               // disabled: { ... }
             },
           },
+          inputStyle: {
+            color: this.content.rangeSelectorColor,
+            fontFamily: this.content.fontFamily
+          },
           labelStyle: {
             color: "silver",
             fontWeight: "bold",
+            fontFamily: this.content.fontFamily
           },
           buttons: [
             {
