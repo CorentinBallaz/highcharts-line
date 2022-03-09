@@ -86,9 +86,10 @@ export default {
                                 type: 'TextSelect',
                                 options: {
                                     options: [
-                                        { value: 'spline', label: { en: 'line', fr: 'Ligne' } },
-                                        { value: 'areasplinerange', label: { en: 'area', fr: 'Aire' } },
-                                        { value: 'column', label: { en: 'bar', fr: 'Barre' } },
+                                        { value: 'spline', label: { en: 'Line', fr: 'Ligne' } },
+                                        { value: 'area', label: { en: 'Area', fr: 'Aire' } },
+                                        { value: 'column', label: { en: 'Bar', fr: 'Barre' } },
+                                        { value: 'areasplinerange', label: { en: 'Range Area', fr: 'Aire remplie' } },
                                     ],
                                 },
                                 defaultValue: 'spline',
