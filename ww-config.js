@@ -83,10 +83,15 @@ export default {
                                     fr: "Type",
                                     en: "Type",
                                 },
-                                type: 'Text',
+                                type: 'TextSelect',
                                 options: {
-                                    placeholder: 'Type',
+                                    options: [
+                                        { value: 'spline', label: { en: 'line', fr: 'Ligne' } },
+                                        { value: 'areasplinerange', label: { en: 'area', fr: 'Aire' } },
+                                        { value: 'column', label: { en: 'bar', fr: 'Barre' } },
+                                    ],
                                 },
+                                defaultValue: 'spline',
                                 bindable: true,
                             },
                             color: {
