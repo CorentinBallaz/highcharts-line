@@ -130,6 +130,9 @@ export default {
             showInNavigator: true,
           },
         },
+        xAxis:{
+          type: "datetime"
+        },
         yAxis: {
           title: {
             text: this.content.yAxisTitle,
