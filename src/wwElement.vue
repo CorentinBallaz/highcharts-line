@@ -139,6 +139,9 @@ export default {
           },
           opposite: false,
         },
+        tooltip: {
+          valueSuffix: this.content.suffixValue
+        },
         series: this.content.series,
         exporting: {
           buttons: {

@@ -73,6 +73,17 @@ export default {
             responsive: true,
             defaultValue: "#000000",
         },
+        suffixValue: {
+            label: {
+                fr: "Unité",
+                en: "Unit",
+            },
+            type: 'Text',
+            options: {
+                placeholder: 'Unit of the serie',
+            },
+            bindable: true,
+        },
         series: {
             label: {
                 fr: "Séries de données",
@@ -138,19 +149,6 @@ export default {
                                 defaultValue: 2,
                                 bindable: true,
                             },
-                            tooltip: {
-                                valueSuffix: {
-                                    label: {
-                                        fr: "Unité",
-                                        en: "Unit",
-                                    },
-                                    type: 'Text',
-                                    options: {
-                                        placeholder: 'Unit of the serie',
-                                    },
-                                    bindable: true,
-                                }
-                              },
                             data: {
                                 label: {
                                     fr: "Données",
