@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="chart">
     <highcharts
       class="stock-chart"
       style="width: 100%; height: 100%; display: block;"
@@ -36,6 +36,7 @@ export default {
     chartOptions() {
       return {
         chart: {
+          renderTo: document.getElementById('chart'),
           style:{
             fontFamily: this.content.fontFamily
           },
