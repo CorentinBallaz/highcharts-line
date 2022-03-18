@@ -149,6 +149,17 @@ export default {
                                 defaultValue: 2,
                                 bindable: true,
                             },
+                            dataGrouping:{
+                                type: 'Object',
+                                    options: {
+                                        item: {
+                                            enabled: {
+                                                defaultValue: false
+                                            }
+                                        }
+                                    },
+                                hidden: true
+                            },
                             data: {
                                 label: {
                                     fr: "Données",
