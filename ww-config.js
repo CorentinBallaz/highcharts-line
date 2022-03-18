@@ -138,6 +138,19 @@ export default {
                                 defaultValue: 2,
                                 bindable: true,
                             },
+                            tooltip: {
+                                valueSuffix: {
+                                    label: {
+                                        fr: "Unité",
+                                        en: "Unit",
+                                    },
+                                    type: 'Text',
+                                    options: {
+                                        placeholder: 'Unit of the serie',
+                                    },
+                                    bindable: true,
+                                }
+                              },
                             data: {
                                 label: {
                                     fr: "Données",
