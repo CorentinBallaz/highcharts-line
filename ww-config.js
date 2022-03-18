@@ -150,14 +150,8 @@ export default {
                                 bindable: true,
                             },
                             dataGrouping:{
-                                type: 'Object',
-                                    options: {
-                                        item: {
-                                            enabled: {
-                                                defaultValue: false
-                                            }
-                                        }
-                                    },
+                                type: 'Info',
+                                defaultValue: {enabled: false},
                                 hidden: true
                             },
                             data: {
