@@ -36,6 +36,9 @@ export default {
     chartOptions() {
       return {
         chart: {
+          style:{
+            fontFamily: this.content.fontFamily
+          },
           backgroundColor: this.content.backgroundColor,
           spacingTop: 20,
           spacingBottom: 20,
@@ -44,15 +47,9 @@ export default {
         },
         title: {
           text: this.content.title,
-          style: {
-            fontFamily: this.content.fontFamily
-          }
         },
         subtitle: {
           text: this.content.subtitle,
-          style: {
-            fontFamily: this.content.fontFamily
-          }
         },
         responsive: {
             rules: [{
@@ -95,12 +92,10 @@ export default {
           },
           inputStyle: {
             color: this.content.rangeSelectorColor,
-            fontFamily: this.content.fontFamily
           },
           labelStyle: {
             color: "silver",
             fontWeight: "bold",
-            fontFamily: this.content.fontFamily
           },
           buttons: [
             {
@@ -137,9 +132,6 @@ export default {
         yAxis: {
           title: {
             text: this.content.yAxisTitle,
-            style: {
-            fontFamily: this.content.fontFamily
-            }
           },
           opposite: false,
         },
@@ -147,6 +139,7 @@ export default {
         exporting: {
           buttons: {
             contextButton: {
+              symbol: 'menuball',
               menuItems: [
                 "viewFullscreen",
                 "printChart",
