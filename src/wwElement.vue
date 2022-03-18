@@ -140,6 +140,9 @@ export default {
           buttons: {
             contextButton: {
               symbol: 'menuball',
+              theme: {
+                fill: this.content.backgroundColor
+              },
               menuItems: [
                 "viewFullscreen",
                 "printChart",
