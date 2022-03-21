@@ -140,7 +140,8 @@ export default {
           opposite: false,
         },
         tooltip: {
-          valueSuffix: this.content.suffixValue
+          valueSuffix: this.content.suffixValue,
+          valueDecimals: 2,
         },
         series: this.content.series,
         exporting: {
