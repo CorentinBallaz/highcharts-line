@@ -152,10 +152,10 @@ export default {
           },
         },
         scrollbar: {
-          barBackgroundColor: 'gray',
+          barBackgroundColor: this.content.buttonColor,
           barBorderRadius: 7,
           barBorderWidth: 0,
-          buttonBackgroundColor: 'gray',
+          buttonBackgroundColor: this.content.buttonColor,
           buttonBorderWidth: 0,
           buttonArrowColor: 'white',
           buttonBorderRadius: 7,
