@@ -143,6 +143,11 @@ export default {
           valueSuffix: this.content.suffixValue,
           valueDecimals: 2,
         },
+        noData: {
+          style: {
+            fontSize: '20px',
+          }
+        },
         series: this.content.series,
         exporting: {
           buttons: {
