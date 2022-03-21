@@ -161,7 +161,7 @@ export default {
           buttonBorderRadius: 7,
           rifleColor: 'white',
           trackBackgroundColor: 'white',
-          trackBorderWidth: 1,
+          trackBorderWidth: 0,
           trackBorderColor: 'silver',
           trackBorderRadius: 7
       },
