@@ -1,8 +1,7 @@
 <template>
-  <div id="chart">
+  <div class=ww-highchart>
     <highcharts
       class="stock-chart"
-      style="width: 100%; height: 100%; display: block;"
       :constructor-type="'stockChart'"
       :options="chartOptions"
       :updateArgs="[true, false]"
@@ -36,7 +35,6 @@ export default {
     chartOptions() {
       return {
         chart: {
-          renderTo: document.getElementById('chart'),
           style:{
             fontFamily: this.content.fontFamily
           },
@@ -51,24 +49,6 @@ export default {
         },
         subtitle: {
           text: this.content.subtitle,
-        },
-        responsive: {
-            rules: [{
-                condition: {
-                    maxWidth: 500
-                },
-                chartOptions: {
-                    chart: {
-                        height: 300
-                    },
-                    subtitle: {
-                        text: null
-                    },
-                    navigator: {
-                        enabled: false
-                    }
-                }
-            }]
         },
         rangeSelector: {
           buttonTheme: {
@@ -190,3 +170,19 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+
+.ww-highchart {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .stock-chart {
+      width: 100%;
+      height: 100%;
+    }
+}
+
+</style>
