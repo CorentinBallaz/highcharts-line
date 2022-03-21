@@ -6,7 +6,6 @@
       :constructor-type="'stockChart'"
       :options="chartOptions"
       :updateArgs="[true, false]"
-      :callbackFunction="callbackOptions"
       ref="highcharts"
     ></highcharts>
   </div>
@@ -169,11 +168,6 @@ export default {
       },
       };
     },
-    callbackOptions() {
-      return {
-        reflow();
-      }
-    }
   },
 };
 </script>
