@@ -135,6 +135,18 @@ export default {
                                 },
                                 bindable: true,
                             },
+                            negativeColor: {
+                                label: {
+                                    fr: "Couleur négative",
+                                    en: "Negative Color",
+                                },
+                                type: 'Color',
+                                options: {
+                                    placeholder: 'Negative Color',
+                                },
+                                defaultValue: '',
+                                bindable: true,
+                            },
                             lineWidth: {
                                 label: {
                                     fr: "Line Width",
