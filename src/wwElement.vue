@@ -2,9 +2,11 @@
   <div class=ww-highchart>
     <highcharts
       class="stock-chart"
+      style="display: flex;"
       :constructor-type="'stockChart'"
       :options="chartOptions"
       :updateArgs="[true, false]"
+      :callbackFunction="callbackOptions"
       ref="highcharts"
     ></highcharts>
   </div>
@@ -167,6 +169,11 @@ export default {
       },
       };
     },
+    callbackOptions() {
+      return {
+        reflow();
+      }
+    }
   },
 };
 </script>
@@ -177,12 +184,5 @@ export default {
     position: relative;
     width: 100%;
     height: 100%;
-
-    .stock-chart {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
 }
-
 </style>
