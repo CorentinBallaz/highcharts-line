@@ -84,6 +84,14 @@ export default {
             },
             bindable: true,
         },
+        isFull: {
+            label: {
+                fr: "full",
+                en: "full",
+            },
+            type: 'OnOff',
+            bindable: true,
+        },
         series: {
             label: {
                 fr: "Séries de données",

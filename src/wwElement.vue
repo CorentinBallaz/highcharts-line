@@ -169,6 +169,13 @@ export default {
       };
     },
   },
+watch: {
+    'content.isFull'(newVal, oldVal){
+      if(newVal !== oldVal){
+        this.$refs.highcharts.chart.reflow()
+      }
+    }
+  }
 };
 </script>
 
