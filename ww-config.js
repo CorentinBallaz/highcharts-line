@@ -169,10 +169,14 @@ export default {
                                 defaultValue: 2,
                                 bindable: true,
                             },
-                            dataGrouping:{
-                                type: 'Info',
-                                defaultValue: {enabled: false},
-                                hidden: true
+                            visible : {
+                                label: {
+                                    fr: "Visible",
+                                    en: "Visible",
+                                },
+                                type: 'OnOff',
+                                defaultValue: true,
+                                bindable: true,
                             },
                             data: {
                                 label: {

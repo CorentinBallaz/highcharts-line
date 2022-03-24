@@ -172,7 +172,7 @@ export default {
 watch: {
     'content.isFull'(newVal, oldVal){
       if(newVal !== oldVal){
-        this.$refs.highcharts.chart.reflow()
+        setTimeout(this.$refs.highcharts.chart.reflow(),1000)
       }
     }
   }
