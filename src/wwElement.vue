@@ -170,14 +170,14 @@ export default {
     },
   },
   
-watch: {
-    'content.isFull'(newVal, oldVal){
-      if(newVal !== oldVal){
-        setTimeout(this.$refs.highcharts.chart.reflow(),1000)
-      }
-    }
-  }
-};
+// watch: {
+//     'content.isFull'(newVal, oldVal){
+//       if(newVal !== oldVal){
+//         setTimeout(this.$refs.highcharts.chart.reflow(),1000)
+//       }
+//     }
+//   }
+// };
 </script>
 
 <style lang="scss" scoped>
