@@ -155,6 +155,15 @@ export default {
                                 defaultValue: '',
                                 bindable: true,
                             },
+                            opacity: {
+                                label: {
+                                    fr: "Opacité",
+                                    en: "Opacity",
+                                },
+                                type: 'Number',
+                                defaultValue: 1,
+                                bindable: true,
+                            },
                             lineWidth: {
                                 label: {
                                     fr: "Line Width",
