@@ -122,7 +122,6 @@ export default {
         tooltip: {
           valueSuffix: this.content.suffixValue,
           valueDecimals: 2,
-          shape: "circle",
         },
         noData: {
           style: {
