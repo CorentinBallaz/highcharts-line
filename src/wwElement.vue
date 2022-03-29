@@ -169,13 +169,17 @@ export default {
     },
   },
   
-// watch: {
-//     'content.isFull'(newVal, oldVal){
-//       if(newVal !== oldVal){
-//         setTimeout(this.$refs.highcharts.chart.reflow(),1000)
-//       }
-//     }
-//   }
+watch: {
+    'content.isFull'(newVal, oldVal){
+      if(newVal !== oldVal){
+        console.log("changement de taille du container");
+        console.log(newVal + "" + oldVal);
+        this.$nextTick(function () {
+          this.$refs.highcharts.chart.reflow() // => 'mis à jour'
+        });
+      }
+    }
+  }
 };
 </script>
 
