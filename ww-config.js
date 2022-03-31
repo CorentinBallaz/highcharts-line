@@ -178,7 +178,7 @@ export default {
                                 defaultValue: 2,
                                 bindable: true,
                             },
-                            visible : {
+                            visible: {
                                 label: {
                                     fr: "Visible",
                                     en: "Visible",

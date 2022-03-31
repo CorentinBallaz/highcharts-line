@@ -1,6 +1,6 @@
 # Element component starter
 
-This is an element for [weweb.io](https://www.weweb.io/).
+This is an element for [weweb.io](https://www.weweb.io/), create by Steadysun engineers.
 
 ## Installation
 

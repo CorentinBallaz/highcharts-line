@@ -1,5 +1,5 @@
 <template>
-  <div class=ww-highchart>
+  <div class="ww-highchart">
     <highcharts
       class="stock-chart"
       :constructor-type="'stockChart'"
@@ -35,8 +35,8 @@ export default {
     chartOptions() {
       return {
         chart: {
-          style:{
-            fontFamily: this.content.fontFamily
+          style: {
+            fontFamily: this.content.fontFamily,
           },
           backgroundColor: this.content.backgroundColor,
           spacingTop: 20,
@@ -108,10 +108,13 @@ export default {
         plotOptions: {
           series: {
             showInNavigator: true,
+            dataGrouping: {
+              enabled: false,
+            },
           },
         },
-        xAxis:{
-          type: "datetime"
+        xAxis: {
+          type: "datetime",
         },
         yAxis: {
           title: {
@@ -125,16 +128,16 @@ export default {
         },
         noData: {
           style: {
-            fontSize: '20px',
-          }
+            fontSize: "20px",
+          },
         },
         series: this.content.series,
         exporting: {
           buttons: {
             contextButton: {
-              symbol: 'menuball',
+              symbol: "menuball",
               theme: {
-                fill: this.content.backgroundColor
+                fill: this.content.backgroundColor,
               },
               menuItems: [
                 "viewFullscreen",
@@ -157,44 +160,42 @@ export default {
           barBorderWidth: 0,
           buttonBackgroundColor: this.content.buttonColor,
           buttonBorderWidth: 0,
-          buttonArrowColor: 'white',
+          buttonArrowColor: "white",
           buttonBorderRadius: 7,
-          rifleColor: 'white',
-          trackBackgroundColor: 'white',
+          rifleColor: "white",
+          trackBackgroundColor: "white",
           trackBorderWidth: 0,
-          trackBorderColor: 'silver',
-          trackBorderRadius: 7
-      },
+          trackBorderColor: "silver",
+          trackBorderRadius: 7,
+        },
       };
     },
   },
-  
-watch: {
-    'content.isFull'(newVal, oldVal){
-      if(newVal !== oldVal){
+
+  watch: {
+    "content.isFull"(newVal, oldVal) {
+      if (newVal !== oldVal) {
         console.log("changement de taille du container");
         console.log(newVal + "" + oldVal);
         this.$nextTick(function () {
-          this.$refs.highcharts.chart.reflow() // => 'mis à jour'
+          this.$refs.highcharts.chart.reflow(); // => 'mis à jour'
         });
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-
 .ww-highchart {
-    position: relative;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .stock-chart {
+    position: absolute;
     width: 100%;
     height: 100%;
-
-    .stock-chart {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
+  }
 }
-
 </style>
