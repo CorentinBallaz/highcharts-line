@@ -133,6 +133,7 @@ export default {
         },
         series: this.content.series,
         exporting: {
+          filename: this.content.exportingFilename,
           buttons: {
             contextButton: {
               symbol: "menuball",
@@ -151,6 +152,11 @@ export default {
                 "downloadCSV",
                 "downloadXLS",
               ],
+            },
+          },
+          chartOptions: {
+            chart: {
+              backgroundColor: this.content.backgroundColor,
             },
           },
         },

@@ -84,6 +84,16 @@ export default {
             },
             bindable: true,
         },
+        exportingFilename: {
+            label: {
+                fr: "Nom du fichier exporté",
+                en: "Exporting filename",
+            },
+            type: "Text",
+            bindable: true,
+            responsive: true,
+            defaultValue: "Chart",
+        },
         isFull: {
             label: {
                 fr: "full",
