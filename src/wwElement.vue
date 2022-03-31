@@ -154,11 +154,6 @@ export default {
               ],
             },
           },
-          chartOptions: {
-            chart: {
-              backgroundColor: this.content.backgroundColor,
-            },
-          },
         },
         scrollbar: {
           barBackgroundColor: this.content.buttonColor,
