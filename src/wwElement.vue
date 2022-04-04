@@ -121,7 +121,7 @@ export default {
           title: {
             text: this.content.yAxisTitle,
           },
-          // min : yAxisMinValue,
+          min : yAxisMinValue,
           opposite: false,
         },
         tooltip: {
