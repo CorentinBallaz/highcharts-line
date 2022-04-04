@@ -43,7 +43,6 @@ export default {
           spacingBottom: 20,
           spacingLeft: 20,
           spacingRight: 20,
-          animation : false,
         },
         title: {
           text: this.content.title,
