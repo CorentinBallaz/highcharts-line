@@ -43,6 +43,7 @@ export default {
           spacingBottom: 20,
           spacingLeft: 20,
           spacingRight: 20,
+          animation : false,
         },
         title: {
           text: this.content.title,
@@ -120,6 +121,7 @@ export default {
           title: {
             text: this.content.yAxisTitle,
           },
+          min : yAxisMinValue,
           opposite: false,
         },
         tooltip: {
@@ -133,7 +135,7 @@ export default {
         },
         series: this.content.series,
         exporting: {
-          // filename: this.content.exportingFilename,
+          filename: this.content.exportingFilename,
           buttons: {
             contextButton: {
               symbol: "menuball",
@@ -173,6 +175,9 @@ export default {
           trackBorderWidth: 0,
           trackBorderColor: "silver",
           trackBorderRadius: 7,
+        },
+        credits:{
+          enabled: false,
         },
       };
     },

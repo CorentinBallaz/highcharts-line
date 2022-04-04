@@ -55,6 +55,15 @@ export default {
             responsive: true,
             defaultValue: "Y Axis",
         },
+        yAxisMinValue: {
+            label: {
+                fr: "Valeur minimum de l'axe Y",
+                en: "Y-axis min",
+            },
+            type: "Number",
+            bindable: true,
+            responsive: true,
+        },
         buttonColor: {
             label: {
                 fr: "Couleur des boutons temporels",
