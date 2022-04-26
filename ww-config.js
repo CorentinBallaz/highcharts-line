@@ -82,6 +82,15 @@ export default {
             responsive: true,
             defaultValue: "#000000",
         },
+        radius:{
+            label: {
+                fr: "Taille des points",
+                en: "Points size",
+            },
+            type: "Number",
+            bindable: true,
+            responsive: true,
+        },
         suffixValue: {
             label: {
                 fr: "Unité",

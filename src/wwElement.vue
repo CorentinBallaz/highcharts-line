@@ -43,7 +43,7 @@ export default {
           spacingBottom: 20,
           spacingLeft: 20,
           spacingRight: 20,
-          animation : false,
+          animation: false,
         },
         title: {
           text: this.content.title,
@@ -112,6 +112,9 @@ export default {
             dataGrouping: {
               enabled: false,
             },
+            marker: {
+              radius: this.content.radius,
+            },
           },
         },
         xAxis: {
@@ -121,7 +124,7 @@ export default {
           title: {
             text: this.content.yAxisTitle,
           },
-          min : this.content.yAxisMinValue,
+          min: this.content.yAxisMinValue,
           opposite: false,
         },
         tooltip: {
@@ -176,7 +179,7 @@ export default {
           trackBorderColor: "silver",
           trackBorderRadius: 7,
         },
-        credits:{
+        credits: {
           enabled: false,
         },
       };
