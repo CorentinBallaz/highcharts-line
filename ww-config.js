@@ -82,15 +82,6 @@ export default {
             responsive: true,
             defaultValue: "#000000",
         },
-        radius:{
-            label: {
-                fr: "Taille des points",
-                en: "Points size",
-            },
-            type: "Number",
-            bindable: true,
-            responsive: true,
-        },
         suffixValue: {
             label: {
                 fr: "Unité",
@@ -205,6 +196,26 @@ export default {
                                 type: 'Number',
                                 defaultValue: 2,
                                 bindable: true,
+                            },
+                            marker : {
+                                type: 'Object',
+                                label: {
+                                    fr: "Point",
+                                    en: "Marker",
+                                },
+                                options: {
+                                    item: {
+                                        radius: {
+                                            label: {
+                                                fr: "Taille des points",
+                                                en: "Marker size",
+                                            },
+                                            type: "Number",
+                                            bindable: true,
+                                            responsive: true,
+                                        },
+                                    }
+                                }
                             },
                             visible: {
                                 label: {

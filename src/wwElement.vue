@@ -112,9 +112,6 @@ export default {
             dataGrouping: {
               enabled: false,
             },
-            marker: {
-              radius: this.content.radius,
-            },
           },
         },
         xAxis: {
