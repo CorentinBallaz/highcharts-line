@@ -197,7 +197,7 @@ export default {
                                 defaultValue: 2,
                                 bindable: true,
                             },
-                            marker : {
+                            marker: {
                                 type: 'Object',
                                 label: {
                                     fr: "Point",
@@ -214,6 +214,16 @@ export default {
                                             bindable: true,
                                             responsive: true,
                                         },
+                                        enabled: {
+                                            label: {
+                                                fr: "Visible",
+                                                en: "Visible",
+                                            },
+                                            type: 'OnOff',
+                                            defaultValue: true,
+                                            bindable: true,
+
+                                        }
                                     }
                                 }
                             },
