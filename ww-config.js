@@ -64,6 +64,15 @@ export default {
             bindable: true,
             responsive: true,
         },
+        yAxisMaxValue: {
+            label: {
+                fr: "Valeur maximum de l'axe Y",
+                en: "Y-axis max",
+            },
+            type: "Number",
+            bindable: true,
+            responsive: true,
+        },
         buttonColor: {
             label: {
                 fr: "Couleur des boutons temporels",

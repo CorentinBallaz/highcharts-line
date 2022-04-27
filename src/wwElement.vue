@@ -52,26 +52,26 @@ export default {
           text: this.content.subtitle,
         },
         rangeSelector: {
-          buttonTheme: {
-            // styles for the buttons
-            fill: "none",
-            stroke: "none",
-            "stroke-width": 0,
-            r: 8,
-            style: {
-              color: this.content.buttonColor,
-            },
-            states: {
-              hover: {},
-              select: {
-                fill: this.content.buttonColor,
-                style: {
-                  color: "white",
-                },
-              },
-              // disabled: { ... }
-            },
-          },
+          // buttonTheme: {
+          //   // styles for the buttons
+          //   fill: "none",
+          //   stroke: "none",
+          //   "stroke-width": 0,
+          //   r: 8,
+          //   style: {
+          //     color: this.content.buttonColor,
+          //   },
+          //   states: {
+          //     hover: {},
+          //     select: {
+          //       fill: this.content.buttonColor,
+          //       style: {
+          //         color: "white",
+          //       },
+          //     },
+          //     // disabled: { ... }
+          //   },
+          // },
           inputStyle: {
             color: this.content.rangeSelectorColor,
           },
@@ -80,30 +80,30 @@ export default {
             fontWeight: "bold",
           },
           buttons: [
-            {
-              count: 12,
-              type: "hour",
-              text: "12h",
-            },
-            {
-              count: 1,
-              type: "day",
-              text: "1d",
-            },
-            {
-              count: 3,
-              type: "day",
-              text: "3d",
-            },
-            {
-              count: 5,
-              type: "day",
-              text: "5d",
-            },
-            {
-              type: "all",
-              text: "All",
-            },
+            // {
+            //   count: 12,
+            //   type: "hour",
+            //   text: "12h",
+            // },
+            // {
+            //   count: 1,
+            //   type: "day",
+            //   text: "1d",
+            // },
+            // {
+            //   count: 3,
+            //   type: "day",
+            //   text: "3d",
+            // },
+            // {
+            //   count: 5,
+            //   type: "day",
+            //   text: "5d",
+            // },
+            // {
+            //   type: "all",
+            //   text: "All",
+            // },
           ],
         },
         plotOptions: {
@@ -122,6 +122,7 @@ export default {
             text: this.content.yAxisTitle,
           },
           min: this.content.yAxisMinValue,
+          max: this.content.yAxisMaxValue,
           opposite: false,
         },
         tooltip: {
