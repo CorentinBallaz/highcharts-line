@@ -4,7 +4,7 @@
       class="stock-chart"
       :constructor-type="'stockChart'"
       :options="chartOptions"
-      :updateArgs="[true, false]"
+      :updateArgs="updateArgs"
       ref="highcharts"
     ></highcharts>
   </div>
