@@ -4,7 +4,7 @@
       class="stock-chart"
       :constructor-type="'stockChart'"
       :options="chartOptions"
-      :updateArgs="updateArgs"
+      :updateArgs="[true, false]"
       ref="highcharts"
     ></highcharts>
   </div>
@@ -23,7 +23,7 @@ export default {
   props: { content: { type: Object, required: true } },
   data() {
     return {
-      updateArgs: [true, false],
+      updateArgs: [true, true, true],
     };
   },
   computed: {
@@ -208,5 +208,10 @@ export default {
     width: 100%;
     height: 100%;
   }
+}
+</style>
+<style>
+.highcharts-navigator-outline {
+  pointer-events: none;
 }
 </style>
