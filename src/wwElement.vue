@@ -23,7 +23,7 @@ export default {
   props: { content: { type: Object, required: true } },
   data() {
     return {
-      updateArgs: [true, true, true],
+      updateArgs: [true, false],
     };
   },
   computed: {
