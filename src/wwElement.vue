@@ -18,6 +18,11 @@ import stockInit from "highcharts/modules/stock";
 import exportingInit from "highcharts/modules/exporting";
 import HC_exportData from "highcharts/modules/export-data";
 
+stockInit(Highcharts);
+highchartsMore(Highcharts);
+exportingInit(Highcharts);
+HC_exportData(Highcharts);
+
 export default {
   components: { highcharts: Chart },
   props: { content: { type: Object, required: true } },
@@ -188,12 +193,6 @@ export default {
       }
     },
   },
-  mounted(){
-    stockInit(Highcharts);
-    highchartsMore(Highcharts);
-    exportingInit(Highcharts);
-    HC_exportData(Highcharts);
-  }
 };
 </script>
 
