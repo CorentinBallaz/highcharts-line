@@ -14,6 +14,7 @@
 import { Chart } from "highcharts-vue";
 import Highcharts from "highcharts";
 import highchartsMore from "highcharts/highcharts-more";
+import vector from "highcharts/modules/vector";
 import stockInit from "highcharts/modules/stock";
 import exportingInit from "highcharts/modules/exporting";
 import HC_exportData from "highcharts/modules/export-data";
@@ -22,6 +23,7 @@ stockInit(Highcharts);
 highchartsMore(Highcharts);
 exportingInit(Highcharts);
 HC_exportData(Highcharts);
+vector(Highcharts);
 
 export default {
   components: { highcharts: Chart },
